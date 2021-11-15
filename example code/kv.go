@@ -42,7 +42,7 @@ type GetReply struct {
 //
 
 func connect() *rpc.Client {
-	client, err := rpc.Dial("tcp", ":1234")
+	client, err := rpc.Dial("tcp", ":1234")	// 建立连接
 	if err != nil {
 		log.Fatal("dialing:", err)
 	}
@@ -77,24 +77,24 @@ func put(key string, val string) {
 //
 
 type KV struct {
-	mu   sync.Mutex
-	data map[string]string
+	mu   sync.Mutex			// 互斥锁
+	data map[string]string	// 存储键值
 }
 
 func server() {
 	kv := new(KV)
 	kv.data = map[string]string{}
 	rpcs := rpc.NewServer()
-	rpcs.Register(kv)
-	l, e := net.Listen("tcp", ":1234")
+	rpcs.Register(kv)					// 注册服务
+	l, e := net.Listen("tcp", ":1234")	// 监听端口
 	if e != nil {
 		log.Fatal("listen error:", e)
 	}
 	go func() {
 		for {
-			conn, err := l.Accept()
+			conn, err := l.Accept()		// 接受连接
 			if err == nil {
-				go rpcs.ServeConn(conn)
+				go rpcs.ServeConn(conn)	// 处理请求
 			} else {
 				break
 			}

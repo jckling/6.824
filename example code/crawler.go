@@ -24,7 +24,7 @@ func Serial(url string, fetcher Fetcher, fetched map[string]bool) {
 		return
 	}
 	for _, u := range urls {
-		Serial(u, fetcher, fetched)
+		Serial(u, fetcher, fetched)	// go Serial(u, fetcher, fetched) 无法正确并行，因为线程共享对象和锁
 	}
 	return
 }
@@ -52,20 +52,20 @@ func ConcurrentMutex(url string, fetcher Fetcher, f *fetchState) {
 	if err != nil {
 		return
 	}
-	var done sync.WaitGroup
+	var done sync.WaitGroup	// 内部有互斥锁或类似机制
 	for _, u := range urls {
 		done.Add(1)
 		//u2 := u
 		//go func() {
-		// defer done.Done()
+		// defer done.Done()	// 总是在包含它的函数结束前调用 done.Done()
 		// ConcurrentMutex(u2, fetcher, f)
 		//}()
-		go func(u string) {
+		go func(u string) {	// 闭包/匿名函数；参数 u 不能省略，因为 for 循环中的 u 会更新（指向不同的字符串），所以要让 goroutine 有自己的一份拷贝
 			defer done.Done()
-			ConcurrentMutex(u, fetcher, f)
+			ConcurrentMutex(u, fetcher, f)	// 闭包中使用的变量会被 go 放到堆中，当外部函数返回时，对象仍然在堆上，之后由垃圾回收负责释放
 		}(u)
 	}
-	done.Wait()
+	done.Wait()	// 等待最后一个 goroutine 结束（计数归零）
 	return
 }
 
@@ -82,26 +82,26 @@ func makeState() *fetchState {
 func worker(url string, ch chan []string, fetcher Fetcher) {
 	urls, err := fetcher.Fetch(url)
 	if err != nil {
-		ch <- []string{}
+		ch <- []string{}	// 向 coordinator 发送消息
 	} else {
-		ch <- urls
+		ch <- urls			// 通道内部实现有一个互斥锁
 	}
 }
 
 func coordinator(ch chan []string, fetcher Fetcher) {
 	n := 1
-	fetched := make(map[string]bool)
-	for urls := range ch {
+	fetched := make(map[string]bool)	// 私有变量，记录哪些网页抓取过
+	for urls := range ch {				// 从通道中读取数据（由 worker 发送）
 		for _, u := range urls {
 			if fetched[u] == false {
 				fetched[u] = true
 				n += 1
-				go worker(u, ch, fetcher)
+				go worker(u, ch, fetcher)	// 没有抓取，启动新的 worker 抓取
 			}
 		}
 		n -= 1
 		if n == 0 {
-			break
+			break	// 所有 worker 执行完毕，结束等待（否则最外层 for 会一直等待通道上出现数据）
 		}
 	}
 }
