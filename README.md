@@ -1,5 +1,8 @@
 # 6.824
 
+个人笔记：https://jck.notion.site/6-824-2221ab969f6644349f1b323e431939c9 如有错误，麻烦提 issue 指正~
+
+
 Schedule & Video & Reference
 - [6.824 Schedule: Spring 2021](http://nil.csail.mit.edu/6.824/2021/schedule.html)
 - [6.824 Schedule: Spring 2020](http://nil.csail.mit.edu/6.824/2020/schedule.html)
