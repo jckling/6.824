@@ -1,15 +1,15 @@
 package main
 
-func main() {
+func main() {	// 效果同 goroutinue/loop.go (WaitGroup)
 	done := make(chan bool)
 	for i := 0; i < 5; i++ {
 		go func(x int) {
 			sendRPC(x)
-			done <- true
+			done <- true	// 发送完成到通道
 		}(i)
 	}
 	for i := 0; i < 5; i++ {
-		<-done
+		<-done	// 接收完成
 	}
 }
 

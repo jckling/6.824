@@ -6,16 +6,16 @@ import "math/rand"
 func main() {
 	rand.Seed(time.Now().UnixNano())
 
-	count := 0
-	finished := 0
+	count := 0		// 同意的票数
+	finished := 0	// 总票数
 
 	for i := 0; i < 10; i++ {
 		go func() {
 			vote := requestVote()
 			if vote {
-				count++
+				count++	// 共享变量没加锁
 			}
-			finished++
+			finished++	// 共享变量没加锁
 		}()
 	}
 

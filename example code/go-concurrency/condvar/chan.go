@@ -6,7 +6,7 @@ import "math/rand"
 func main() {
 	rand.Seed(time.Now().UnixNano())
 
-	c := make(chan bool)
+	c := make(chan bool)	// 利用通道传递数据
 
 	for i := 0; i < 10; i++ {
 		go func() {

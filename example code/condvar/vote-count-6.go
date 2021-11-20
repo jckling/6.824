@@ -1,7 +1,9 @@
 package main
 
-import "time"
-import "math/rand"
+import (
+	"math/rand"
+	"time"
+)
 
 func main() {
 	rand.Seed(time.Now().UnixNano())
@@ -10,10 +12,10 @@ func main() {
 	ch := make(chan bool)
 	for i := 0; i < 10; i++ {
 		go func() {
-			ch <- requestVote()
+			ch <- requestVote() // 往通道发送 10 次数据
 		}()
 	}
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 10; i++ { // 接收 10 次数据，省略 finished 变量
 		v := <-ch
 		if v {
 			count += 1

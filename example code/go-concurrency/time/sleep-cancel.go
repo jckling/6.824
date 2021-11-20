@@ -3,8 +3,8 @@ package main
 import "time"
 import "sync"
 
-var done bool
-var mu sync.Mutex
+var done bool		// 全局变量
+var mu sync.Mutex	// 互斥锁
 
 func main() {
 	time.Sleep(1 * time.Second)
@@ -23,7 +23,8 @@ func periodic() {
 		println("tick")
 		time.Sleep(1 * time.Second)
 		mu.Lock()
-		if done {
+		if done {	// 终止 goroutine
+			// mu.Unlock()	// 返回前释放锁，可以使用 defer 关键字
 			return
 		}
 		mu.Unlock()

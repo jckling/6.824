@@ -5,12 +5,12 @@ import "time"
 
 func main() {
 	counter := 0
-	var mu sync.Mutex
+	var mu sync.Mutex	// 互斥锁
 	for i := 0; i < 1000; i++ {
 		go func() {
 			mu.Lock()
-			defer mu.Unlock()
-			counter = counter + 1
+			defer mu.Unlock()		// 函数结束前释放锁
+			counter = counter + 1	// 临界区
 		}()
 	}
 

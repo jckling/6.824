@@ -12,7 +12,7 @@ func main() {
 	total := alice + bob
 
 	go func() {
-		for i := 0; i < 1000; i++ {
+		for i := 0; i < 1000; i++ {	// 整个操作是原子的，total 不变
 			mu.Lock()
 			alice -= 1
 			bob += 1

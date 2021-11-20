@@ -9,7 +9,7 @@ func main() {
 
 	count := 0
 	finished := 0
-	var mu sync.Mutex
+	var mu sync.Mutex	// 互斥锁
 
 	for i := 0; i < 10; i++ {
 		go func() {
@@ -23,7 +23,7 @@ func main() {
 		}()
 	}
 
-	for {
+	for {	// 忙于等待（获取锁-检查-释放锁）
 		mu.Lock()
 
 		if count >= 5 || finished == 10 {

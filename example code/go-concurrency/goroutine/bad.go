@@ -6,7 +6,7 @@ func main() {
 	var wg sync.WaitGroup
 	for i := 0; i < 5; i++ {
 		wg.Add(1)
-		go func() {
+		go func() {		// 没有传参（i 会被外层改变）
 			sendRPC(i)
 			wg.Done()
 		}()

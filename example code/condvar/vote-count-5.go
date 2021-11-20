@@ -6,9 +6,9 @@ import "math/rand"
 func main() {
 	rand.Seed(time.Now().UnixNano())
 
-	count := 0
+	count := 0		
 	finished := 0
-	ch := make(chan bool)
+	ch := make(chan bool)	// 利用通道传递数据
 	for i := 0; i < 10; i++ {
 		go func() {
 			ch <- requestVote()

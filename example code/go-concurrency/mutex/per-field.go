@@ -11,13 +11,13 @@ func main() {
 
 	total := alice + bob
 
-	go func() {
+	go func() {	// 整个操作分为两步，不是原子的，因此可以观察到冲突（改变了 total）
 		for i := 0; i < 1000; i++ {
 			mu.Lock()
-			alice -= 1
+			alice -= 1	// 原子
 			mu.Unlock()
 			mu.Lock()
-			bob += 1
+			bob += 1	// 原子
 			mu.Unlock()
 		}
 	}()
@@ -35,7 +35,7 @@ func main() {
 	start := time.Now()
 	for time.Since(start) < 1*time.Second {
 		mu.Lock()
-		if alice+bob != total {
+		if alice+bob != total {	// 检查总数
 			fmt.Printf("observed violation, alice = %v, bob = %v, sum = %v\n", alice, bob, alice+bob)
 		}
 		mu.Unlock()

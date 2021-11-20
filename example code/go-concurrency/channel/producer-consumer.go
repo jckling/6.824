@@ -7,11 +7,11 @@ func main() {
 	c := make(chan int)
 
 	for i := 0; i < 4; i++ {
-		go doWork(c)
+		go doWork(c)	// 生产
 	}
 
 	for {
-		v := <-c
+		v := <-c		// 消费
 		println(v)
 	}
 }
