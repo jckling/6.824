@@ -10,9 +10,10 @@ Schedule & Video & Reference
 - [6.824 / Spring 2021 [麻省理工分布式系统 - 2021年春季]](https://www.bilibili.com/video/BV16f4y1z7kn)
 - [chaozh/MIT-6.824](https://github.com/chaozh/MIT-6.824)
 
+
 注释：
-- 2020-LEC5 和 2021-LEC10 都是 Go 语言相关的内容，合并两节的内容学习；
-- 2021-LEC6 是 Lab1 Q&A；2021 LEC8 是 Lab2 A+B Q&A；
+- 2020-LEC5 和 2021-LEC10 都是 Go 语言相关的内容；
+- 2021-LEC6 是 Lab1 Q&A；2021-LEC8 是 Lab2 A+B Q&A；
 - 2020 和 2021 部分课程指定的论文不同，计划是先把 2020 的论文和录播看完再补 2021 的内容；
 
 
