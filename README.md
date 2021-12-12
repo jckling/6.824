@@ -14,7 +14,7 @@ Schedule & Video & Reference
 注释：
 - 2020-LEC5 和 2021-LEC10 都是 Go 语言相关的内容；
 - 2021-LEC6 是 Lab1 Q&A；2021-LEC8 是 Lab2 A+B Q&A；
-- 2020 和 2021 部分课程指定的论文不同，计划是先把 2020 的论文和录播看完再补 2021 的内容；
+- 2020-LEC9 关于 CRAQ 内容太少，建议补充 2021-LEC11 关于 CR 的内容； 
 
 
 ---
@@ -26,6 +26,10 @@ Papers
   - [Case Study - GFS: Evolution on Fast-forward](https://queue.acm.org/detail.cfm?id=1594206)
 - [The Design of a Practical System for Fault-Tolerant Virtual Machines](http://nil.csail.mit.edu/6.824/2021/papers/vm-ft.pdf)
 - [In Search of an Understandable Consensus Algorithm (Extended Version)](http://nil.csail.mit.edu/6.824/2021/papers/raft-extended.pdf)
+- [ZooKeeper: Wait-free coordination for Internet-scale systems](http://nil.csail.mit.edu/6.824/2021/papers/zookeeper.pdf)
+- [Chain Replication for Supporting High Throughput and Availability](http://nil.csail.mit.edu/6.824/2021/papers/cr-osdi04.pdf)
+- [Object Storage on CRAQ: High-throughput chain replication for read-mostly workloads](http://nil.csail.mit.edu/6.824/2020/papers/craq.pdf)
+- [Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases](http://nil.csail.mit.edu/6.824/2020/papers/aurora.pdf)
 
 
 ---
@@ -33,7 +37,7 @@ Papers
 
 Labs                                                                                                   | Task
 -------------------------------------------------------------------------------------------------------|--------------------------
-[Lab 1: MapReduce](http://nil.csail.mit.edu/6.824/2021/labs/lab-mr.html)                               | 1 part  + 2 changelles
+[Lab 1: MapReduce](http://nil.csail.mit.edu/6.824/2021/labs/lab-mr.html)                               | 1 part
 [Lab 2: Raft](http://nil.csail.mit.edu/6.824/2021/labs/lab-raft.html)                                  | 4 parts
 [Lab 3: Fault-tolerant Key/Value Service](http://nil.csail.mit.edu/6.824/2021/labs/lab-kvraft.html)    | 2 parts
-[Lab 4: Sharded Key/Value Service](http://nil.csail.mit.edu/6.824/2021/labs/lab-shard.html)            | 2 parts + 3 challenges
+[Lab 4: Sharded Key/Value Service](http://nil.csail.mit.edu/6.824/2021/labs/lab-shard.html)            | 2 parts
