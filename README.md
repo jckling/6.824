@@ -30,6 +30,7 @@ Papers
 - [Chain Replication for Supporting High Throughput and Availability](http://nil.csail.mit.edu/6.824/2021/papers/cr-osdi04.pdf)
 - [Object Storage on CRAQ: High-throughput chain replication for read-mostly workloads](http://nil.csail.mit.edu/6.824/2020/papers/craq.pdf)
 - [Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases](http://nil.csail.mit.edu/6.824/2020/papers/aurora.pdf)
+- [Frangipani: A Scalable Distributed File System](http://nil.csail.mit.edu/6.824/2020/papers/thekkath-frangipani.pdf)
 
 
 ---
