@@ -33,6 +33,7 @@ Papers
 - [Frangipani: A Scalable Distributed File System](http://nil.csail.mit.edu/6.824/2020/papers/thekkath-frangipani.pdf)
 - [Chapter 9: Atomicity: All-or-nothing and Before-or-after](https://ocw.mit.edu/resources/res-6-004-principles-of-computer-system-design-an-introduction-spring-2009/online-textbook/)
   - 9.1.5、9.1.6、9.5.2、9.5.3、9.6.3
+- [Spanner: Google’s Globally-Distributed Database](http://nil.csail.mit.edu/6.824/2020/papers/spanner.pdf)
 
 
 ---
