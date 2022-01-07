@@ -28,12 +28,14 @@ Papers
 - [In Search of an Understandable Consensus Algorithm (Extended Version)](http://nil.csail.mit.edu/6.824/2021/papers/raft-extended.pdf)
 - [ZooKeeper: Wait-free coordination for Internet-scale systems](http://nil.csail.mit.edu/6.824/2021/papers/zookeeper.pdf)
 - [Chain Replication for Supporting High Throughput and Availability](http://nil.csail.mit.edu/6.824/2021/papers/cr-osdi04.pdf)
-- [Object Storage on CRAQ: High-throughput chain replication for read-mostly workloads](http://nil.csail.mit.edu/6.824/2020/papers/craq.pdf)
-- [Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases](http://nil.csail.mit.edu/6.824/2020/papers/aurora.pdf)
-- [Frangipani: A Scalable Distributed File System](http://nil.csail.mit.edu/6.824/2020/papers/thekkath-frangipani.pdf)
+- [Object Storage on CRAQ: High-throughput chain replication for read-mostly workloads](http://nil.csail.mit.edu/6.824/2021/papers/craq.pdf)
+- [Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases](http://nil.csail.mit.edu/6.824/2021/papers/aurora.pdf)
+- [Frangipani: A Scalable Distributed File System](http://nil.csail.mit.edu/6.824/2021/papers/thekkath-frangipani.pdf)
 - [Chapter 9: Atomicity: All-or-nothing and Before-or-after](https://ocw.mit.edu/resources/res-6-004-principles-of-computer-system-design-an-introduction-spring-2009/online-textbook/)
   - 9.1.5、9.1.6、9.5.2、9.5.3、9.6.3
-- [Spanner: Google’s Globally-Distributed Database](http://nil.csail.mit.edu/6.824/2020/papers/spanner.pdf)
+- [Spanner: Google’s Globally-Distributed Database](http://nil.csail.mit.edu/6.824/2021/papers/spanner.pdf)
+- [No compromises: distributed transactions with consistency, availability, and performance](http://nil.csail.mit.edu/6.824/2021/papers/farm-2015.pdf)
+- [Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing](http://nil.csail.mit.edu/6.824/2021/papers/zaharia-spark.pdf)
 
 
 ---
