@@ -1,6 +1,6 @@
 # 6.824
 
-个人笔记：https://jck.notion.site/6-824-2221ab969f6644349f1b323e431939c9 如有错误，麻烦提 issue 指正~
+[notion 笔记](https://jck.notion.site/6-824-2221ab969f6644349f1b323e431939c9)，欢迎 issue 讨论/指正🧐
 
 
 Schedule & Video & Reference
@@ -11,10 +11,11 @@ Schedule & Video & Reference
 - [chaozh/MIT-6.824](https://github.com/chaozh/MIT-6.824)
 
 
-注释：
+注：
 - 2020-LEC5 和 2021-LEC10 都是 Go 语言相关的内容；
 - 2021-LEC6 是 Lab1 Q&A；2021-LEC8 是 Lab2 A+B Q&A；
 - 2020-LEC9 关于 CRAQ 内容太少，建议补充 2021-LEC11 关于 CR 的内容； 
+- 2020-LEC13 开始线上；
 
 
 ---
@@ -36,6 +37,7 @@ Papers
 - [Spanner: Google’s Globally-Distributed Database](http://nil.csail.mit.edu/6.824/2021/papers/spanner.pdf)
 - [No compromises: distributed transactions with consistency, availability, and performance](http://nil.csail.mit.edu/6.824/2021/papers/farm-2015.pdf)
 - [Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing](http://nil.csail.mit.edu/6.824/2021/papers/zaharia-spark.pdf)
+- [Scaling Memcache at Facebook](http://nil.csail.mit.edu/6.824/2020/papers/memcache-fb.pdf)
 
 
 ---
