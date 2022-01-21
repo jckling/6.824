@@ -37,7 +37,8 @@ Papers
 - [Spanner: Google’s Globally-Distributed Database](http://nil.csail.mit.edu/6.824/2021/papers/spanner.pdf)
 - [No compromises: distributed transactions with consistency, availability, and performance](http://nil.csail.mit.edu/6.824/2021/papers/farm-2015.pdf)
 - [Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing](http://nil.csail.mit.edu/6.824/2021/papers/zaharia-spark.pdf)
-- [Scaling Memcache at Facebook](http://nil.csail.mit.edu/6.824/2020/papers/memcache-fb.pdf)
+- [Scaling Memcache at Facebook](http://nil.csail.mit.edu/6.824/2021/papers/memcache-fb.pdf)
+- [Don’t Settle for Eventual: Scalable Causal Consistency for Wide-Area Storage with COP](http://nil.csail.mit.edu/6.824/2020/papers/cops.pdf)
 
 
 ---
