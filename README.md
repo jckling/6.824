@@ -39,6 +39,10 @@ Papers
 - [Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing](http://nil.csail.mit.edu/6.824/2021/papers/zaharia-spark.pdf)
 - [Scaling Memcache at Facebook](http://nil.csail.mit.edu/6.824/2021/papers/memcache-fb.pdf)
 - [Don’t Settle for Eventual: Scalable Causal Consistency for Wide-Area Storage with COP](http://nil.csail.mit.edu/6.824/2020/papers/cops.pdf)
+- [Certificate Transparency](https://certificate.transparency.dev/)
+- [How CT works](https://certificate.transparency.dev/howctworks/)
+- [Transparent Logs for Skeptical Clients](https://research.swtch.com/tlog)
+  - skip the Tiles sections and the appendices
 
 
 ---
