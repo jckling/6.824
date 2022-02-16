@@ -16,6 +16,8 @@ Schedule & Video & Reference
 - 2021-LEC6 是 Lab1 Q&A；2021-LEC8 是 Lab2 A+B Q&A；
 - 2020-LEC9 关于 CRAQ 内容太少，建议补充 2021-LEC11 关于 CR 的内容； 
 - 2020-LEC13 开始线上；
+- 2020-LEC18 和 2021-LEC18 都是讲 Fork Consistency 的，但阅读材料不同； 
+- 2020-LEC20 和 2021-LEC20 都是讲 Blockstack 的，但阅读材料不同；
 
 
 ---
@@ -43,6 +45,12 @@ Papers
 - [How CT works](https://certificate.transparency.dev/howctworks/)
 - [Transparent Logs for Skeptical Clients](https://research.swtch.com/tlog)
   - skip the Tiles sections and the appendices
+- [Secure Untrusted Data Repository (SUNDR)](http://nil.csail.mit.edu/6.824/2021/papers/li-sundr.pdf)
+- [Bitcoin: A Peer-to-Peer Electronic Cash System](http://nil.csail.mit.edu/6.824/2021/papers/bitcoin.pdf)
+- [How the Bitcoin protocol actually works](https://michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/)
+- [Blockstack: A New Internet for Decentralized Applications](http://nil.csail.mit.edu/6.824/2020/papers/blockstack-2017.pdf)
+- [Blockstack: A Global Naming and Storage System Secured by Blockchains](http://nil.csail.mit.edu/6.824/2021/papers/blockstack-atc16.pdf)
+- [Experiences with a Distributed, Scalable, Methodological File System: AnalogicFS](http://nil.csail.mit.edu/6.824/2021/papers/katabi-analogicfs.pdf)
 
 
 ---
